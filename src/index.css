@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: "fontb";
+    src: url("../src/font/netflix/BebasNeue-Regular.otf");
+}
+
+.fontB {
+    font-family: "fontb";
+}
