@@ -2,12 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    @layer responsive {
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    }
+}
 
 @font-face {
     font-family: "fontb";
-    src: url("../src/font/netflix/BebasNeue-Regular.otf");
+    src: url("../src/!font/netflix/NetflixSans-Bold.otf");
 }
 
-.fontB {
+.fontb {
     font-family: "fontb";
+}
+
+@font-face {
+    font-family: "fontl";
+    src: url("../src/!font/netflix/NetflixSans-Medium.otf");
+}
+
+.fontl {
+    font-family: "fontl";       
 }
