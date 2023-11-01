@@ -47,7 +47,7 @@ const scrollSpeed = (scrollSpeedPercentage / 100) * windowWidth;
                 src={`https://image.tmdb.org/t/p/w500/${item?.backdrop_path}`}
                 alt={item?.title}
               />
-              <p className="lg:text-[16px] text-[13px] text-center text-white fontl mt-[2px] w-[43vw] max-w-[310px]">
+              <p className="lg:text-[16px] text-[13px] text-center text-white fontl mt-[2px] w-[43vw] max-w-[310px] ">
                 {item?.title}
               </p>
             </div>
