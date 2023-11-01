@@ -27,7 +27,7 @@ function IntroPage() {
           <img
             src={bg}
             alt="backGround"
-            className="absolute z-[-2] object-left object-cover w-full h-full scale-100 sm:scale-125 sm:translate-y-[-12.5%] "
+            className="bg-black absolute z-[-2] object-left object-cover w-full h-full scale-100 sm:scale-125 sm:translate-y-[-12.5%] "
           />
         </div>
         <div className="relative z-20">
