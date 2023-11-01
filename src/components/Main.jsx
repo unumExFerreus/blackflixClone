@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import requests from "../Requests";
 import axios from "axios";
 
@@ -12,10 +12,10 @@ const Main = () => {
       setMovies(response.data.results);
     });
   }, []);
-  
-  const truncateString = (str, num) =>{
-    if(str?.length > num) {
-      return str.slice(0, num) + '...'
+
+  const truncateString = (str, num) => {
+    if (str?.length > num) {
+      return str.slice(0, num) + "...";
     } else {
       return str;
     }
@@ -30,8 +30,8 @@ const Main = () => {
             src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`}
             alt={movie?.title}
           />
-          <div className="relative top-[30%] text-white px-[3%] md:max-w-[700px] z-10">
-            <h2 className="lg:text-[3rem] xxl:text-[3.25rem] text-[2.75rem] fontb leading-[60px]">
+          <div className="relative top-[20%] text-white px-[3%] md:max-w-[700px] z-10">
+            <h2 className="max-h-[120px] overflow-hidden lg:text-[3rem] xxl:text-[3.25rem] text-[2.5rem] fontb leading-[60px]">
               {movie?.title}
             </h2>
             <div className="flex">
@@ -42,8 +42,12 @@ const Main = () => {
                 Watch Later
               </button>
             </div>
-            <p className="lg:text-[16px] text-[14px] text-gray-400 " >Released: {movie?.release_date}</p>
-            <p className="lg:text-[19px] text-[16px] ">{truncateString(movie?.overview, 150)}</p>
+            <p className="lg:text-[16px] text-[14px] text-gray-400 ">
+              Released: {movie?.release_date}
+            </p>
+            <p className="lg:text-[19px] text-[16px]">
+              {truncateString(movie?.overview, 150)}
+            </p>
           </div>
         </div>
       </div>
