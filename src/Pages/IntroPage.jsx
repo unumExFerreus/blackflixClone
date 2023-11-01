@@ -26,7 +26,7 @@ function IntroPage() {
         <div>
           <img
             src={bg}
-            alt="backGround"
+            alt="back Ground"
             className="bg-black absolute z-[-2] object-left object-cover w-full h-full scale-100 sm:scale-125 sm:translate-y-[-12.5%] "
           />
         </div>
@@ -78,6 +78,7 @@ function IntroPage() {
           <div className="sm:basis-1/2 pl-[6px] relative">
             <img
               src={tv}
+              alt="tv"
               className="relative w-full sm:w-[75%] mx-auto lg:w-full z-[3]"
             />
             <video
@@ -108,12 +109,14 @@ function IntroPage() {
             <div className="relative">
               <img
                 src={mobile}
+                alt="mobile"
                 className="w-full sm:w-[75%] mx-auto lg:w-full"
               />
               <div className="absolute flex overflow-hidden mx-auto bg-black items-center left-[50%] translate-x-[-50%] w-[55%]  min-w-[17rem] min-h-[4rem] text-center rounded-xl border-[2px] border-[rgba(128,128,128,0.7)] shadow-md lg:py-2 lg:px-3 md:py-[.35rem] px-3 bottom-[8%] max-h-[26%] ">
                 <div>
                   <img
                     src={boxshot}
+                    alt="box shot"
                     className="w-full max-h-12 md:max-h-20 pr-4"
                   />
                 </div>
@@ -126,7 +129,11 @@ function IntroPage() {
                   </div>
                 </div>
                 <div className="block ml-auto">
-                  <img src={downloadIcon} className="max-h-[3.75rem]" />
+                  <img
+                    alt="Download Icon"
+                    src={downloadIcon}
+                    className="max-h-[3.75rem]"
+                  />
                 </div>
               </div>
             </div>
@@ -148,6 +155,7 @@ function IntroPage() {
           <div className="sm:basis-1/2 pl-[6px] relative">
             <img
               src={devicePile}
+              alt="Device Pile"
               className="relative w-full sm:w-[75%] mx-auto lg:w-full z-[3]"
             />
             <video
@@ -177,7 +185,7 @@ function IntroPage() {
           </div>
           <div dir="ltr" className="lg:basis-1/2 relative">
             <div className="relative">
-              <img src={kids} className="w-full sm:w-[75%] mx-auto lg:w-full" />
+              <img alt="Kids" src={kids} className="w-full sm:w-[75%] mx-auto lg:w-full" />
             </div>
           </div>
         </div>
