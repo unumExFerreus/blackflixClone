@@ -26,7 +26,7 @@ const scrollSpeed = (scrollSpeedPercentage / 100) * windowWidth;
 
   return (
     <>
-      <h2 className="text-white fontb lg:text-[20px] text-[16px] pt-4 mt-4 px-[3%] relative z-[3]">
+      <h2 className="text-white fontb lg:text-[20px] text-[16px] pt-4 lg:mt-4 px-[3%] relative z-[3]">
         {title}
       </h2>
       <div className="relative flex items-center px-[3%] z-[3]">
@@ -38,7 +38,7 @@ const scrollSpeed = (scrollSpeedPercentage / 100) * windowWidth;
         </button>
         <div
           id={"slider" + rowID}
-          className="my-4 pb-2 h-full w-full overflow-x-scroll whitespace-nowrap scroll-smooth no-scrollbar relative"
+          className="mt-4 h-full w-full overflow-x-scroll whitespace-nowrap scroll-smooth no-scrollbar relative"
         >
           {movies.map((item, id) => (
             <div key={id} className="w-[43vw] max-w-[310px] inline-block cursor-pointer relative pr-3">
@@ -47,7 +47,7 @@ const scrollSpeed = (scrollSpeedPercentage / 100) * windowWidth;
                 src={`https://image.tmdb.org/t/p/w500/${item?.backdrop_path}`}
                 alt={item?.title}
               />
-              <p className="lg:text-[16px] text-[13px] text-center text-white fontl mt-[2px] w-[35vw] max-w-[35vw] ">
+              <p className="min-h-[50px] lg:text-[16px] text-[13px] text-center text-white mt-[2px] whitespace-pre-line overflow-hidden">
                 {item?.title}
               </p>
             </div>
