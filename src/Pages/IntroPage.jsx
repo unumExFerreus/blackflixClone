@@ -35,7 +35,7 @@ function IntroPage() {
         </div>
         {/* HERO */}
         <div className="flex min-h-[30rem] lg:min-h-[43.75rem] justify-center m-auto items-center sm:max-w-[calc(100%-4rem)] xl:max-w-[calc(83.3%-6rem)] xxl:max-w-[calc(66.6%-6rem)] select-none pt-[80px]">
-          <div className="">
+          <div>
             <h1 className="text-white lg:text-[3rem] text-[2rem] fontb items-center text-center leading-tight">
               Unlimited movies, TV shows, and more
             </h1>
