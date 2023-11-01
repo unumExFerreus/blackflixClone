@@ -13,9 +13,9 @@ const AccordionCustom = () => {
         <div>
           <div className="mx-auto select-none">
             <div className="grid divide-y-reverse transition-all duration-700 divide-neutral-200 mx-auto">
-              <div className="">
+              <div>
                 <details className="group mb-2 flex items-center justify-between w-full text-left lg:text-[1.5rem] text-[1.125rem] text-white">
-                  <summary className="font-medium cursor-pointer list-none flex items-center justify-between w-full p-6 text-left lg:text-[1.5rem] text-[1.125rem] bg-[#2d2d2d] hover:bg-[#3d3d3d] text-white ">
+                  <summary className="font-medium cursor-pointer list-none flex items-center justify-between w-full p-6 text-left lg:text-[1.5rem] text-[1.125rem] bg-[#2d2d2d] hover:bg-[#3d3d3d] text-white">
                     <span>What can I watch on Netflix?</span>
                     <span className="transition group-open:rotate-180">
                       <svg

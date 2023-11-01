@@ -29,7 +29,7 @@ const SignIn = () => {
       <div className="hidden sm:flex">
         <img
           src={bg}
-          alt="back ground"
+          alt="back-ground"
           className="absolute z-[-2] object-left object-cover w-full h-full"
         />
       </div>
