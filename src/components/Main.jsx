@@ -31,14 +31,14 @@ const Main = () => {
             alt={movie?.title}
           />
           <div className="relative top-[20%] text-white px-[3%] md:max-w-[700px] z-10">
-            <h2 className="max-h-[120px] overflow-hidden lg:text-[3rem] xxl:text-[3.25rem] text-[2.5rem] fontb leading-[60px]">
+            <h2 className="max-h-[120px] overflow-hidden lg:max-h-[300px] lg:text-[3rem] xxl:text-[3.25rem] text-[2.5rem] fontb leading-[60px]">
               {movie?.title}
             </h2>
             <div className="flex">
-              <button className="flex px-5 mr-4 items-center bg-white text-black h-[40px] w-auto rounded-[2px] mt-1 mb-8 fontb">
+              <button className="flex px-5 mr-4 items-center bg-white text-black h-[40px] w-auto rounded-[2px] mt-2 mb-8 fontb">
                 Play
               </button>
-              <button className="flex px-5 items-center bg-transparent border-[1px] text-white h-[40px] w-auto rounded-[2px] mt-1 mb-8 fontb">
+              <button className="flex px-5 items-center bg-transparent border-[1px] text-white h-[40px] w-auto rounded-[2px] mt-2 mb-8 fontb">
                 Watch Later
               </button>
             </div>
