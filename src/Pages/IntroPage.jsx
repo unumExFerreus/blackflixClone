@@ -43,10 +43,10 @@ function IntroPage() {
               Watch anywhere. Cancel anytime.
             </p>
             <div className="mt-[1.5rem] text-white text-[1.125rem] fontm items-center text-center m-0 lg:text-[1.25rem] max-w-[61.5rem] px-[1.5rem] mx-auto ">
-              <h3 className="px-2">
+              <p className="px-2">
                 Ready to watch? Enter your email to create or restart your
                 membership.
-              </h3>
+              </p>
               <div className="sm:flex items-center mt-5 mx-auto max-w-xl ">
                 <input
                   type="email"
