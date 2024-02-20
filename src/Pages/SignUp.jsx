@@ -1,5 +1,5 @@
 import "../App.css";
-import { bg } from "../!assets";
+import { bg } from "../../public/assets";
 import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import { UserAuth } from "../Context/AuthContext";
@@ -8,7 +8,7 @@ import { useState } from "react";
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { signUp, logInAsGuest } = UserAuth();
+  const { signUp } = UserAuth();
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
@@ -86,96 +86,94 @@ const SignUp = () => {
             Learn more.
           </p>
         </form>
-        <Link to={"/movies"} className="text-[#0071eb] ml-auto text-[1rem]">
+        <Link to={"/movies"} className="text-white ml-auto text-[.875rem]">
           Continue as a guest
         </Link>
       </div>
       {/* FOOTER */}
       <div className="border-solid border-t-[1px] leading-none border-[#737373] flex md:hidden"></div>
-      <footer>
-        <div className="w-full bg-black bg-opacity-75 ">
-          <div
-            data-style="heading"
-            className="text-[#737373] text-[1rem] mx-auto max-w-[90%] lg:max-w-[1000px] hover:underline pb-6 pt-8 "
-          >
-            <a href="#">Questions? Contact us.</a>
-          </div>
-          <ul
-            className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-[#737373] text-[.875rem]
-            mx-auto max-w-[90%] lg:max-w-[1000px] pb-[12.1rem]"
-          >
-            <li>
-              <a
-                role="link"
-                data-uia="footer-link"
-                className="hover:underline pb-[.75rem]"
-                href="#"
-              >
-                FAQ
-              </a>
-            </li>
-            <li>
-              <a
-                role="link"
-                data-uia="footer-link"
-                className="hover:underline pb-[.75rem] block"
-                href="#"
-              >
-                Help Centre
-              </a>
-            </li>
-            <li>
-              <a
-                role="link"
-                data-uia="footer-link"
-                className="hover:underline pb-[.75rem] block"
-                href="#"
-              >
-                Netflix Shop
-              </a>
-            </li>
-            <li>
-              <a
-                role="link"
-                data-uia="footer-link"
-                className="hover:underline pb-[.75rem] block"
-                href="#"
-              >
-                Terms of Use
-              </a>
-            </li>
-            <li>
-              <a
-                role="link"
-                data-uia="footer-link"
-                className="hover:underline pb-[.75rem] block"
-                href="#"
-              >
-                Privacy
-              </a>
-            </li>
-            <li>
-              <a
-                role="link"
-                data-uia="footer-link"
-                className="hover:underline pb-[.75rem] block"
-                href="#"
-              >
-                Cookie Preferences
-              </a>
-            </li>
-            <li>
-              <a
-                role="link"
-                data-uia="footer-link"
-                className="hover:underline pb-[.75rem] block"
-                href="#"
-              >
-                Corporate Information
-              </a>
-            </li>
-          </ul>
+      <footer className="w-full bg-black bg-opacity-75">
+        <div
+          data-style="heading"
+          className="text-[#737373] text-[1rem] mx-auto max-w-[90%] lg:max-w-[1000px] hover:underline pb-6 pt-8"
+        >
+          <a href="#">Questions? Contact us.</a>
         </div>
+        <ul
+          className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-[#737373] text-[.875rem]
+            mx-auto max-w-[90%] lg:max-w-[1000px] pb-[1.25rem]"
+        >
+          <li>
+            <a
+              role="link"
+              data-uia="footer-link"
+              className="hover:underline pb-[.75rem]"
+              href="#"
+            >
+              FAQ
+            </a>
+          </li>
+          <li>
+            <a
+              role="link"
+              data-uia="footer-link"
+              className="hover:underline pb-[.75rem] block"
+              href="#"
+            >
+              Help Centre
+            </a>
+          </li>
+          <li>
+            <a
+              role="link"
+              data-uia="footer-link"
+              className="hover:underline pb-[.75rem] block"
+              href="#"
+            >
+              Netflix Shop
+            </a>
+          </li>
+          <li>
+            <a
+              role="link"
+              data-uia="footer-link"
+              className="hover:underline pb-[.75rem] block"
+              href="#"
+            >
+              Terms of Use
+            </a>
+          </li>
+          <li>
+            <a
+              role="link"
+              data-uia="footer-link"
+              className="hover:underline pb-[.75rem] block"
+              href="#"
+            >
+              Privacy
+            </a>
+          </li>
+          <li>
+            <a
+              role="link"
+              data-uia="footer-link"
+              className="hover:underline pb-[.75rem] block"
+              href="#"
+            >
+              Cookie Preferences
+            </a>
+          </li>
+          <li>
+            <a
+              role="link"
+              data-uia="footer-link"
+              className="hover:underline pb-[.75rem] block"
+              href="#"
+            >
+              Corporate Information
+            </a>
+          </li>
+        </ul>
       </footer>
     </div>
   );

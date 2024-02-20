@@ -1,7 +1,7 @@
 import "../App.css";
 import { useState } from "react";
 import Navbar from "../components/Navbar";
-import { bg } from "../!assets";
+import { bg } from "../../public/assets";
 import { Link, useNavigate } from "react-router-dom";
 import { UserAuth } from "../Context/AuthContext";
 
@@ -91,14 +91,13 @@ const SignIn = () => {
         <div className="w-full bg-black bg-opacity-75 ">
           <div
             data-style="heading"
-            className="text-[#737373] text-[1rem] mx-auto max-w-[90%] lg:max-w-[1000px] hover:underline pb-6 pt-8 "
+            className="text-[#737373] text-[1rem] mx-auto max-w-[90%] lg:max-w-[1000px] hover:underline pb-6 pt-8"
           >
             <a href="#">Questions? Contact us.</a>
           </div>
-
           <ul
             className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-[#737373] text-[.875rem]
-            mx-auto max-w-[90%] lg:max-w-[1000px] md:pb-[12.1rem]"
+            mx-auto max-w-[90%] lg:max-w-[1000px] pb-[1.25rem]"
           >
             <li>
               <a

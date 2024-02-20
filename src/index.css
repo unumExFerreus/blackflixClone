@@ -17,7 +17,7 @@
 
 @font-face {
     font-family: "fontb";
-    src: url("../src/!font/netflix/NetflixSans-Bold.otf");
+    src: url("/!font/netflix/NetflixSans-Medium.otf");
 }
 
 .fontb {
@@ -26,7 +26,7 @@
 
 @font-face {
     font-family: "fontl";
-    src: url("../src/!font/netflix/NetflixSans-Medium.otf");
+    src: url("/!font/netflix/NetflixSans-Regular.otf");
 }
 
 .fontl {

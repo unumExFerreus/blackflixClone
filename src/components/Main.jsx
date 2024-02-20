@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import requests from "../Requests";
 import axios from "axios";
 
@@ -26,7 +26,7 @@ const Main = () => {
         <div className="relative w-full h-full">
           <div className="z-[1] absolute bottom-0 w-full h-[10vh] bg-gradient-to-t from-[#181818] "></div>
           <img
-            className="absolute z-[0] w-full object-cover object-center h-[70vh] opacity-50"
+            className="absolute z-[0] w-full object-cover object-top h-[70vh] opacity-50"
             src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`}
             alt={movie?.title}
           />

@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import { logo } from "../!assets/index";
+import { logo } from "../../public/assets/index";
 import { UserAuth } from "../Context/AuthContext";
 
 function Navbar() {

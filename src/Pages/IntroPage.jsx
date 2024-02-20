@@ -11,7 +11,7 @@ import {
   devicePile,
   videoDevices,
   kids,
-} from "../!assets";
+} from "/public/assets/index.js";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
