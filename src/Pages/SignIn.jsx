@@ -1,9 +1,9 @@
 import "../App.css";
 import { useState } from "react";
 import Navbar from "../components/Navbar";
-import { bg } from "../../public/assets";
+import { bg } from "../_assets/_index";
 import { Link, useNavigate } from "react-router-dom";
-import { UserAuth } from "../Context/AuthContext";
+import { UserAuth } from "../context/AuthContext";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");

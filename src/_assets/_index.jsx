@@ -10,6 +10,7 @@ import devicePile from "./device-pile.png"
 import kids from "./kids.png"
 import chevR from "./chevronright.png"
 import chevL from "./chevron-left.png"
+import plus from "./plus.png"
 
 export {
     logo,
@@ -24,4 +25,5 @@ export {
     kids,
     chevR,
     chevL,
+    plus,
 }

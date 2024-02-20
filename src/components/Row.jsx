@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { chevR, chevL } from "../../public/assets";
+import { chevR, chevL } from "../_assets/_index";
 
 export const Row = ({ title, fetchURL, rowID }) => {
   const [movies, setMovies] = useState([]);

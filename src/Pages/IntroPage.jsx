@@ -1,5 +1,5 @@
 import Footer from "../components/Footer";
-import AccordionCustom from "../components/AccordionCustom";
+import Accordion from "../components/Accordion";
 import "../App.css";
 import {
   bg,
@@ -11,7 +11,7 @@ import {
   devicePile,
   videoDevices,
   kids,
-} from "/public/assets/index.js";
+} from "../_assets/_index";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
@@ -65,7 +65,7 @@ function IntroPage() {
       </div>
       {/* MAIN CONTENT */}
       <div className="bg-black z-0 select-none">
-        <div className="lg:flex lg:flex-row h-full text-center lg:text-left min-h-[auto] py-14 lg:py-[4.5rem] justify-center m-auto items-center max-w-[calc(100%-3rem)] lg:max-w-[calc(100%-4rem)] xl:max-w-[calc(83.3%-6rem)] xxl:max-w-[calc(66.6%-6rem)] ">
+        <div className="lg:flex lg:flex-row h-full text-center lg:text-left min-h-[auto] py-14 lg:py-[4.5rem] justify-center m-auto items-center max-w-[calc(100%-3rem)] lg:max-w-[calc(100%-4rem)] xl:max-w-[calc(83.3%-6rem)] xxl:max-w-[calc(66.6%-6rem)]">
           <div className="lg:basis-1/2">
             <h2 className="w-full text-white text-[2rem] md:text-[3rem] fontb leading-[4rem] ">
               Enjoy on your TV
@@ -112,7 +112,7 @@ function IntroPage() {
                 alt="mobile"
                 className="w-full sm:w-[75%] mx-auto lg:w-full"
               />
-              <div className="absolute flex overflow-hidden mx-auto bg-black items-center left-[50%] translate-x-[-50%] w-[55%]  min-w-[17rem] min-h-[4rem] text-center rounded-xl border-[2px] border-[rgba(128,128,128,0.7)] shadow-md lg:py-2 lg:px-3 md:py-[.35rem] px-3 bottom-[8%] max-h-[26%] ">
+              <div className="absolute flex overflow-hidden mx-auto bg-black items-center left-[50%] translate-x-[-50%] w-[55%] min-w-[17rem] min-h-[4rem] text-center rounded-xl border-[2px] border-[rgba(128,128,128,0.7)] shadow-md lg:py-2 lg:px-3 md:py-[.35rem] px-3 bottom-[8%] max-h-[26%] ">
                 <div>
                   <img
                     src={boxshot}
@@ -172,10 +172,10 @@ function IntroPage() {
       <div className="bg-black select-none">
         <div
           dir="rtl"
-          className="lg:flex lg:flex-row h-full text-center sm:text-left min-h-[auto] py-14 sm:py-[4.5rem] justify-center m-auto items-center max-w-[calc(100%-3rem)] sm:max-w-[calc(100%-4rem)] xl:max-w-[calc(83.3%-6rem)] xxxl:max-w-[calc(66.6%-6rem)] "
+          className="lg:flex lg:flex-row h-full text-center sm:text-left min-h-[auto] py-14 sm:py-[4.5rem] justify-center m-auto items-center max-w-[calc(100%-3rem)] sm:max-w-[calc(100%-4rem)] xl:max-w-[calc(83.3%-6rem)] xxxl:max-w-[calc(66.6%-6rem)]"
         >
           <div dir="ltr" className="lg:basis-1/2">
-            <h2 className="w-full text-white text-[2rem] md:text-[3rem] fontb leading-[2.5rem] sm:leading-[3.75rem] ">
+            <h2 className="w-full text-white text-[2rem] md:text-[3rem] fontb leading-[2.5rem] sm:leading-[3.75rem]">
               Create profiles for kids
             </h2>
             <p className="w-full px-1 pb-6 text-white text-[1.125rem] md:text-[1.5rem] mt-4 fontl leading-[1.5rem] sm:leading-[1.75rem]">
@@ -196,7 +196,11 @@ function IntroPage() {
         <div className="w-full h-2 absolute bg-[#444] opacity-50"></div>
       </div>
       {/* ACCORDION */}
-      <AccordionCustom />
+      <div className=" bg-black w-full">
+        <div className="flex flex-row h-full py-14 lg:py-[4.5rem] lg:justify-center m-auto items-center w-full sm:max-w-[calc(100%-4rem)] xl:max-w-[calc(83.3%-6rem)] xxxl:max-w-[calc(66.6%-6rem)]">
+          <Accordion />
+        </div>
+      </div>
       {/* FOOTER */}
       <div className="bg-black w-full">
         <div className="max-w-[calc(100%-3rem)] sm:max-w-[calc(100%-4rem)] xl:max-w-[calc(83.3%-6rem)] xxxl:max-w-[calc(66.6%-6rem)] mx-auto">

@@ -1,8 +1,8 @@
 import "../App.css";
-import { bg } from "../../public/assets";
+import { bg } from "../_assets/_index";
 import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import { UserAuth } from "../Context/AuthContext";
+import { UserAuth } from "../context/AuthContext";
 import { useState } from "react";
 
 const SignUp = () => {
