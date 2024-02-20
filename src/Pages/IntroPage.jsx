@@ -20,8 +20,8 @@ function IntroPage() {
     <div lang="en" dir="ltr" className="overflow-hidden">
       <div className="relative min-h-[31.5rem] lg:max-h-[43.75rem]">
         <div>
-          <div className="absolute top-0 right-0 w-full h-full bgGradient z-[-1]"></div>
-          <div className="absolute top-0 right-0 w-full h-full bgGradient2 z-[-1]"></div>
+          <div className="absolute top-0 right-0 w-full h-full bgGradient z-[-1]" />
+          <div className="absolute top-0 right-0 w-full h-full bgGradient2 z-[-1]" />
         </div>
         <div>
           <img
@@ -55,7 +55,7 @@ function IntroPage() {
                   className="w-full sm:w-2/3 bg-[#0f0f0fb0] placeholder:text-[#aaa] border-[1px] border-[#8C8C8C] h-[3rem] sm:h-[3.5rem] py-3 px-4 text-[1rem] rounded-[.25rem]"
                 />
                 <button className="fontb mt-4 sm:mt-0 min-w-fit w-1/3 sm:ml-2 bg-[#E50914] hover:bg-[#D00A13] duration-300 text-white h-[3rem] sm:h-[3.5rem] py-3 px-5 text-[1.3rem] rounded-[.25rem] leading-none">
-                  <Link to="/login"> Get Started</Link>
+                  <Link to="/signup"> Get Started</Link>
                 </button>
               </div>
             </div>
@@ -160,7 +160,7 @@ function IntroPage() {
             />
             <video
               src={videoDevices}
-              className="w-full h-full overflow-hidden z-[1] max-w-[63%] max-h-[46%] absolute top-[10.6%] left-[18.4%] "
+              className="w-full h-full overflow-hidden z-[1] max-w-[63%] max-h-[46%] absolute top-[10.6%] left-[18.4%]"
               autoPlay
               loop
               muted
@@ -185,7 +185,11 @@ function IntroPage() {
           </div>
           <div dir="ltr" className="lg:basis-1/2 relative">
             <div className="relative">
-              <img alt="Kids" src={kids} className="w-full sm:w-[75%] mx-auto lg:w-full" />
+              <img
+                alt="Kids"
+                src={kids}
+                className="w-full sm:w-[75%] mx-auto lg:w-full"
+              />
             </div>
           </div>
         </div>

@@ -18,7 +18,7 @@ function Navbar() {
   return (
     <div className="relative">
       {user?.email ? (
-        <div className="flex w-full justify-between absolute items-center h-[56px] px-[3%] ">
+        <div className="flex w-full justify-between absolute items-center h-[56px] px-[3%]">
           <Link to="/movies">
             <img className="block h-[32px]" src={logo} alt="NETFLIX" />
           </Link>
@@ -36,7 +36,7 @@ function Navbar() {
             <img className="block h-[32px]" src={logo} alt="NETFLIX" />
           </Link>
           <div className="flex flex-row">
-            <Link to="/login">
+            <Link to="/signin">
               <button className="flex items-center min-w-fit h-[32px] cursor-pointer select-none rounded-[2px] py-[16px] px-[17px] text-[14px] text-[#fff] bg-[#E50914] hover:bg-[#D00A13] duration-300">
                 <span className="leading-none font-medium ">Sign In</span>
               </button>

@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Intro />} />
           <Route path="/movies" element={<Movies />} />
-          <Route path="/login" element={<SignIn />} />
+          <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
         </Routes>
       </AuthContextProvider>

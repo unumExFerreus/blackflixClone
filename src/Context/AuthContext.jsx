@@ -7,12 +7,12 @@ import {
   signOut,
   onAuthStateChanged,
 } from "firebase/auth";
-import { useFetcher } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const AuthContext = createContext();
 
 export function AuthContextProvider({ children }) {
-  const [user, setUser] = useState({});
+  const [user, setUser] = useState(null);
 
   function signUp(email, password) {
     return createUserWithEmailAndPassword(auth, email, password);
@@ -33,7 +33,7 @@ export function AuthContextProvider({ children }) {
     return () => {
       unsubscribe();
     };
-  });
+  }, []);
 
   return (
     <AuthContext.Provider value={{ logIn, logOut, signUp, user }}>
@@ -41,6 +41,10 @@ export function AuthContextProvider({ children }) {
     </AuthContext.Provider>
   );
 }
+
+AuthContextProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export function UserAuth() {
   return useContext(AuthContext);

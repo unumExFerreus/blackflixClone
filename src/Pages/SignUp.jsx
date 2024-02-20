@@ -1,5 +1,5 @@
 import "../App.css";
-import { bg, logo } from "../!assets";
+import { bg } from "../!assets";
 import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import { UserAuth } from "../Context/AuthContext";
@@ -8,19 +8,19 @@ import { useState } from "react";
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { user, signUp } = UserAuth();
+  const { signUp, logInAsGuest } = UserAuth();
   const [error, setError] = useState("");
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError('')
+    setError("");
     try {
       await signUp(email, password);
-      navigate('/movies')
+      navigate("/movies");
     } catch (error) {
       console.log(error);
-      setError(error.message)
+      setError(error.message);
     }
   };
 
@@ -41,7 +41,9 @@ const SignUp = () => {
         <h1 className="flex fontb text-white text-[2rem] mb-[28px]  ">
           Sign Up
         </h1>
-        {error ? <p className="bg-red-500 text-white p-[14px] mb-4">{error}</p> : null}
+        {error ? (
+          <p className="bg-red-500 text-white p-[14px] mb-4">{error}</p>
+        ) : null}
         <form onSubmit={handleSubmit}>
           <input
             onChange={(e) => setEmail(e.target.value)}
@@ -58,7 +60,7 @@ const SignUp = () => {
             className="w-full text-white bg-[#333] mb-[1rem] px-5 placeholder:text-[#aaa] border-none h-[50px] text-[1rem] rounded-[.25rem]"
           />
           <button className="w-full mt-[24px] mb-[12px] bg-[#E50914] hover:bg-[#D00A13] duration-300 text-white h-[50px] py-3 px-5 text-[1rem] rounded-[.25rem] leading-none">
-            sign Up
+            Sign Up
           </button>
           <div className="flex text-[#b3b3b3] text-[.875rem]  leading-none">
             <input
@@ -74,7 +76,7 @@ const SignUp = () => {
             <span className="text-[#737373] mr-1 font-normal">
               Already have account?
             </span>
-            <Link to="/login">Sign In</Link>
+            <Link to="/signin">Sign In</Link>
           </p>
           <p className="text-[#0071eb] text-[13px] leading-[1.15rem]">
             <span className="text-[#737373] mr-1">
@@ -84,6 +86,9 @@ const SignUp = () => {
             Learn more.
           </p>
         </form>
+        <Link to={"/movies"} className="text-[#0071eb] ml-auto text-[1rem]">
+          Continue as a guest
+        </Link>
       </div>
       {/* FOOTER */}
       <div className="border-solid border-t-[1px] leading-none border-[#737373] flex md:hidden"></div>
@@ -95,7 +100,6 @@ const SignUp = () => {
           >
             <a href="#">Questions? Contact us.</a>
           </div>
-
           <ul
             className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-[#737373] text-[.875rem]
             mx-auto max-w-[90%] lg:max-w-[1000px] pb-[12.1rem]"
