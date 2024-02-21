@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { chevR, chevL } from "../_assets/_index";
+import { Link } from "react-router-dom";
 
 export const Row = ({ title, fetchURL, rowID }) => {
   const [movies, setMovies] = useState([]);
@@ -12,7 +13,7 @@ export const Row = ({ title, fetchURL, rowID }) => {
   }, [fetchURL]);
 
   const truncateString = (str, num) => {
-    if (str?.length > num) {
+    if (str?.length > num && windowWidth < 450 ) {
       return str.slice(0, num) + "...";
     } else {
       return str;
@@ -53,14 +54,16 @@ export const Row = ({ title, fetchURL, rowID }) => {
               key={id}
               className="w-[43vw] max-w-[310px] inline-block cursor-pointer relative pr-3"
             >
-              <img
-                className="w-full h-full block"
-                src={`https://image.tmdb.org/t/p/w500/${item?.backdrop_path}`}
-                alt={item?.title}
-              />
-              <p className="min-h-[40px] lg:min-h-[75px] lg:text-[16px] text-[13px] text-center text-white whitespace-pre-line overflow-hidden">
-                {truncateString(item?.title, 25)}
-              </p>
+              <Link to={`/Details/${item.title}`}>
+                <img
+                  className="w-full h-full block"
+                  src={`https://image.tmdb.org/t/p/w500/${item?.backdrop_path}`}
+                  alt={item?.title}
+                />
+                <p className="min-h-[40px] lg:min-h-[75px] lg:text-[16px] text-[13px] text-center text-white whitespace-pre-line overflow-hidden">
+                  {truncateString(item?.title, 27)}
+                </p>
+              </Link>
             </div>
           ))}
         </div>

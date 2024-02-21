@@ -13,13 +13,6 @@ const Main = () => {
     });
   }, []);
 
-  const truncateString = (str, num) => {
-    if (str?.length > num) {
-      return str.slice(0, num) + "...";
-    } else {
-      return str;
-    }
-  };
   return (
     <>
       <div className="w-full h-[70vh]">
@@ -45,8 +38,8 @@ const Main = () => {
             <p className="lg:text-[16px] text-[14px] text-gray-400 ">
               Released: {movie?.release_date}
             </p>
-            <p className="lg:text-[19px] text-[16px]">
-              {truncateString(movie?.overview, 150)}
+            <p className="lg:text-[19px] text-[16px] line-clamp-3">
+              {movie?.overview}
             </p>
           </div>
         </div>

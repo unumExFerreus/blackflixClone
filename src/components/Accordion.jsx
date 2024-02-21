@@ -30,7 +30,7 @@ const Accordion = () => {
                 </span>
               </div>
               <div
-                className={`text-[1.125rem] md:text-[1.5rem] text-white mt-[1px] mb-1 sm:mb-2 transition-all duration-300 grid bg-[#414141] px-6 ${
+                className={`text-[1.125rem] md:text-[1.5rem] text-white mt-[1px] mb-1 transition-all duration-300 grid bg-[#414141] px-6 ${
                   isOpen === item.id ? "grid-rows-[1fr] p-6" : "grid-rows-[0fr]"
                 }`}
               >
