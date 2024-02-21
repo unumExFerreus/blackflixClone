@@ -80,7 +80,7 @@ const SignUp = () => {
           </p>
           <p className="text-[#0071eb] text-[13px] leading-[1.15rem]">
             <span className="text-[#737373] mr-1">
-              This page is protected by Google reCAPTCHA to ensure you're not a
+              This page is protected by Google reCAPTCHA to ensure you&apos;re not a
               bot.
             </span>
             Learn more.

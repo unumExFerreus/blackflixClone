@@ -70,7 +70,7 @@ const Details = () => {
           Lost your way?
         </h1>
         <p className="flex justify-center text-white text-center text-[1.125rem] lg:text-[2.125rem] fontl mb-5">
-          Sorry, we can't find that page. You'll find loads to explore on the
+          Sorry, we can&apos;t find that page. You&apos;ll find loads to explore on the
           home page.
         </p>
         <button className="py-2 lg:py-4 px-5 lg:px-10 bg-white hover:bg-white/60 duration-150 text-black fontl text-[.875rem] lg:text-[1.5rem] rounded-[4px]">
