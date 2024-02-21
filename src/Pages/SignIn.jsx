@@ -3,7 +3,7 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 import { bg } from "../_assets/_index";
 import { Link, useNavigate } from "react-router-dom";
-import { UserAuth } from "../context/AuthContext";
+import { UserAuth } from "../Context/AuthContext";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");

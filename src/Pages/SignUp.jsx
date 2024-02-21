@@ -2,7 +2,7 @@ import "../App.css";
 import { bg } from "../_assets/_index";
 import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import { UserAuth } from "../context/AuthContext";
+import { UserAuth } from "../Context/AuthContext";
 import { useState } from "react";
 
 const SignUp = () => {

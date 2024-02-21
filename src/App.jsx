@@ -6,7 +6,7 @@ import Movies from "./Pages/Home";
 import Details from "./Pages/Details"
 
 import { Route, Routes } from "react-router-dom";
-import { AuthContextProvider } from "./context/AuthContext";
+import { AuthContextProvider } from "./Context/AuthContext";
 
 function App() {
   return (
