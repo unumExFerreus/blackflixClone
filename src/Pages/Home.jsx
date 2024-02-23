@@ -13,14 +13,14 @@ const Home = () => {
       <div className="h-[55vh]">
         <Main />
       </div>
-      <div className="mt12">
+      <div className="mt-12">
         <Row rowID="1" title="Popular" fetchURL={requests.requestPopular} />
         <Row rowID="2" title="Top Rated" fetchURL={requests.requestTopRated} />
         <Row rowID="3" title="Upoming" fetchURL={requests.requestUpoming} />
       </div>
-      <div className=" bg-[#181818] mt-[240px] mx-[3%] max-w-[55%] ">
+      <footer className="bg-[#181818] mt-20 mx-[3%] max-w-[55%]">
         <Footer />
-      </div>
+      </footer>
     </div>
   );
 };

@@ -13,7 +13,7 @@ export const Row = ({ title, fetchURL, rowID }) => {
   }, [fetchURL]);
 
   const truncateString = (str, num) => {
-    if (str?.length > num && windowWidth < 450 ) {
+    if (str?.length > num && windowWidth < 450) {
       return str.slice(0, num) + "...";
     } else {
       return str;
@@ -34,7 +34,7 @@ export const Row = ({ title, fetchURL, rowID }) => {
   };
 
   return (
-    <>
+    <section aria-label="Row">
       <h2 className="mb-2 text-white fontb lg:text-[20px] text-[16px] px-[3%] relative z-[3]">
         {title}
       </h2>
@@ -74,6 +74,6 @@ export const Row = ({ title, fetchURL, rowID }) => {
           <img src={chevR} alt="icon" />
         </button>
       </div>
-    </>
+    </section>
   );
 };

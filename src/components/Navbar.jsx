@@ -20,7 +20,7 @@ function Navbar() {
       {user?.email ? (
         <div className="flex w-full justify-between absolute items-center h-[56px] px-[3%]">
           <Link to="/movies">
-            <img className="block h-8" src={logo} alt="NETFLIX" />
+            <img className="block h-8" src={logo} alt="Netflix logo"/>
           </Link>
           <div className="flex flex-row">
               <button
@@ -33,7 +33,7 @@ function Navbar() {
       ) : (
         <div className="flex w-full justify-between absolute items-center h-[56px] px-[3%] ">
           <Link to="/">
-            <img className="block h-8" src={logo} alt="NETFLIX" />
+            <img className="block h-8" src={logo} alt="Netflix logo"/>
           </Link>
           <div className="flex flex-row">
             <Link to="/signin">

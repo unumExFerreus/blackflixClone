@@ -17,7 +17,7 @@ const Main = () => {
     <>
       <div className="w-full h-[70vh]">
         <div className="relative w-full h-full">
-          <div className="z-[1] absolute bottom-0 w-full h-[10vh] bg-gradient-to-t from-[#181818] "></div>
+          <div className="z-[1] absolute bottom-0 w-full h-[10vh] bg-gradient-to-t from-[#181818]"/>
           <img
             className="absolute z-[0] w-full object-cover object-top h-[70vh] opacity-50"
             src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`}
@@ -35,7 +35,7 @@ const Main = () => {
                 Watch Later
               </button>
             </div>
-            <p className="lg:text-[16px] text-[14px] text-gray-400 ">
+            <p className="lg:text-[16px] text-[14px] text-gray-400">
               Released: {movie?.release_date}
             </p>
             <p className="lg:text-[19px] text-[16px] line-clamp-3">

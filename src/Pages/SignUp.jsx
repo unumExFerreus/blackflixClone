@@ -36,11 +36,8 @@ const SignUp = () => {
       <div className="relative z-20">
         <Navbar />
       </div>
-      {/* HERO */}
       <div className="md:min-w-[380px] md:max-w-[450px] min-h-[550px] md:min-h-[660px] md:mb-[90px] md:pt-[60px] md:px-[68px] px-[5%] pb-[40px] md:mx-auto bg-black bg-opacity-75 select-none rounded-[4px] md:mt-[86px] pt-[60px]">
-        <h1 className="flex fontb text-white text-[2rem] mb-[28px]">
-          Sign Up
-        </h1>
+        <h1 className="flex fontb text-white text-[2rem] mb-[28px]">Sign Up</h1>
         {error ? (
           <p className="bg-[#E50914] text-white p-[14px] mb-4">{error}</p>
         ) : null}
@@ -62,17 +59,15 @@ const SignUp = () => {
           <button className="w-full mt-[24px] mb-[12px] bg-[#E50914] hover:bg-[#d00a14] duration-300 text-white h-[50px] py-3 px-5 text-[1rem] rounded-[.25rem] leading-none">
             Sign Up
           </button>
-          <div className="flex text-[#b3b3b3] text-[.875rem]  leading-none">
+          <div className="flex text-[#b3b3b3] text-[.875rem] leading-none">
             <input
               className="bg-[#333] border-none rounded-sm mr-2"
               type="checkbox"
-              name=""
-              id=""
             />
-            <p className="text-">Remember me</p>
+            <p className="text-[#737373]">Remember me</p>
             <p className="ml-auto">Need help?</p>
           </div>
-          <p className="flex mt-[1rem] md:mt-[4.5rem] pb-2 text-white font-medium ">
+          <p className="flex mt-[1rem] md:mt-[4.5rem] pb-2 text-white font-medium">
             <span className="text-[#737373] mr-1 font-normal">
               Already have account?
             </span>
@@ -80,8 +75,8 @@ const SignUp = () => {
           </p>
           <p className="text-[#0071eb] text-[13px] leading-[1.15rem]">
             <span className="text-[#737373] mr-1">
-              This page is protected by Google reCAPTCHA to ensure you&apos;re not a
-              bot.
+              This page is protected by Google reCAPTCHA to ensure you&apos;re
+              not a bot.
             </span>
             Learn more.
           </p>
@@ -90,13 +85,9 @@ const SignUp = () => {
           Continue as a guest
         </Link>
       </div>
-      {/* FOOTER */}
-      <div className="border-solid border-t-[1px] leading-none border-[#737373] flex md:hidden"></div>
+      <div className="border-solid border-t-[1px] leading-none border-[#737373] flex md:hidden" />
       <footer className="w-full bg-black bg-opacity-75">
-        <div
-          data-style="heading"
-          className="text-[#737373] text-[1rem] mx-auto max-w-[90%] lg:max-w-[1000px] hover:underline pb-6 pt-8"
-        >
+        <div className="text-[#737373] text-[1rem] mx-auto max-w-[90%] lg:max-w-[1000px] hover:underline pb-6 pt-8">
           <a href="#">Questions? Contact us.</a>
         </div>
         <ul
@@ -107,7 +98,7 @@ const SignUp = () => {
             <a
               role="link"
               data-uia="footer-link"
-              className="hover:underline pb-[.75rem]"
+              className="hover:underline pb-[.75rem] block"
               href="#"
             >
               FAQ

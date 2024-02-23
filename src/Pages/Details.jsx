@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 import axios from "axios";
 import requests from "../Requests";
@@ -49,14 +49,14 @@ const Details = () => {
                     Watch Later
                   </button>
                 </div>
-                <p className="lg:text-[16px] text-[14px] text-gray-400 ">
+                <p className="lg:text-[16px] text-[14px] text-gray-400">
                   Released: {item?.release_date}
                 </p>
                 <p className="lg:text-[19px] text-[16px]">{item?.overview}</p>
               </div>
             </div>
           ))}
-          <div className="z-[1] absolute bottom-0 w-full h-[10vh] bg-gradient-to-t from-[#181818]" />
+          <div className="z-[1] absolute bottom-0 w-full h-[10vh] bg-gradient-to-t from-[#181818]"/>
         </div>
       </div>
       <div className=" bg-[#181818] mt-[240px] mx-[3%] max-w-[55%]">
@@ -73,10 +73,10 @@ const Details = () => {
           Sorry, we can&apos;t find that page. You&apos;ll find loads to explore on the
           home page.
         </p>
-        <button className="py-2 lg:py-4 px-5 lg:px-10 bg-white hover:bg-white/60 duration-150 text-black fontl text-[.875rem] lg:text-[1.5rem] rounded-[4px]">
+        <Link to={"/movies"} className="py-2 lg:py-4 px-5 lg:px-10 bg-white hover:bg-white/80 duration-150 text-black fontl text-[.875rem] lg:text-[1.5rem] rounded-[4px]">
           Netflix Home
-        </button>
-        <span className="flex justify-center text-white text-center lg:text-[2.25rem] fontl mt-10 lg:mt-20 py-3 pl-4 border-l-2 border-[#e50914]">
+        </Link>
+        <span className="flex justify-center text-white text-center lg:text-[2rem] fontl mt-10 lg:mt-20 py-3 pl-4 border-l-2 border-[#e50914]">
           Error Code <strong className="pl-2 fontb">NSES-404</strong>
         </span>
       </div>
