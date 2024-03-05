@@ -36,7 +36,7 @@ const SignIn = () => {
       <div className="relative z-20">
         <Navbar />
       </div>
-      <div className="md:min-w-[380px] md:max-w-[450px] min-h-[550px] md:min-h-[660px] md:mb-[90px] md:pt-[60px] md:px-[68px] px-[5%] pb-[40px] md:mx-auto bg-black bg-opacity-75 select-none rounded-[4px]  md:mt-[86px] pt-[60px]">
+      <div className="md:min-w-[380px] md:max-w-[450px] min-h-[550px] md:min-h-[660px] md:mb-[90px] md:pt-[60px] md:px-[68px] px-[5%] pb-[40px] md:mx-auto bg-black bg-opacity-75 select-none rounded-[4px] md:mt-[86px] pt-[60px]">
         <h1 className="flex fontb text-white text-[2rem] mb-[28px]">Sign In</h1>
         {error ? (
           <p className="bg-red-500 text-white p-[14px] mb-4">{error}</p>
