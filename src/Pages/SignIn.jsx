@@ -25,7 +25,7 @@ const SignIn = () => {
   };
 
   return (
-    <div className="relative min-h-[100vh] bg-black md:bg-black/50">
+    <div className="flex flex-col justify-between relative min-h-[100vh] bg-black md:bg-black/50">
       <div className="hidden sm:flex">
         <img
           src={bg}
