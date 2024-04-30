@@ -3,7 +3,7 @@ import SignIn from "./Pages/SignIn";
 import SignUp from "./Pages/SignUp";
 import Intro from "./Pages/IntroPage";
 import Movies from "./Pages/Home";
-import Details from "./Pages/Details"
+import Details from "./Pages/Details";
 
 import { Route, Routes } from "react-router-dom";
 import { AuthContextProvider } from "./Context/AuthContext";
