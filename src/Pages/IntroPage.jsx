@@ -2,7 +2,7 @@ import Footer from "../components/Footer";
 import Accordion from "../components/Accordion";
 import "../App.css";
 import {
-  // bg,
+  bg,
   tv,
   v1,
   mobile,
@@ -12,13 +12,13 @@ import {
   videoDevices,
   kids,
 } from "../_assets/_index";
-// import { Link } from "react-router-dom";
-// import Navbar from "../components/Navbar";
+import { Link } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 function IntroPage() {
   return (
     <div lang="en" dir="ltr" className="overflow-hidden">
-      {/* <section
+      <section
         aria-label="Hero"
         className="relative min-h-[31.5rem] lg:max-h-[43.75rem]"
       >
@@ -64,8 +64,8 @@ function IntroPage() {
           </div>
         </div>
         <div className="w-full h-2 absolute bottom-[-.5rem] bg-[#444] opacity-50"></div>
-      </section> */}
-      {/* <section aria-label="Main content">
+      </section>
+      <section aria-label="Main content">
         <div className="bg-black z-0 select-none">
           <div className="lg:flex lg:flex-row h-full text-center lg:text-left min-h-[auto] py-14 lg:py-[4.5rem] justify-center m-auto items-center max-w-[calc(100%-3rem)] lg:max-w-[calc(100%-4rem)] xl:max-w-[calc(83.3%-6rem)] xxl:max-w-[calc(66.6%-6rem)]">
             <div className="lg:basis-1/2">
@@ -197,21 +197,21 @@ function IntroPage() {
           </div>
           <div className="w-full h-2 absolute bg-[#444] opacity-50" />
         </div>
-      </section> */}
-      {/* <section aria-label="Accordion">
+      </section>
+      <section aria-label="Accordion">
         <div className="bg-black w-full">
           <div className="flex flex-row h-full py-14 lg:py-[4.5rem] lg:justify-center m-auto items-center w-full sm:max-w-[calc(100%-4rem)] xl:max-w-[calc(83.3%-6rem)] xxxl:max-w-[calc(66.6%-6rem)]">
             <Accordion />
           </div>
         </div>
-      </section> */}
-      {/* <footer>
+      </section>
+      <footer>
         <div className="bg-black w-full">
           <div className="max-w-[calc(100%-3rem)] sm:max-w-[calc(100%-4rem)] xl:max-w-[calc(83.3%-6rem)] xxxl:max-w-[calc(66.6%-6rem)] mx-auto">
             <Footer />
           </div>
         </div>
-      </footer> */}
+      </footer>
     </div>
   );
 }
