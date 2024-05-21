@@ -51,6 +51,7 @@ function IntroPage() {
               </p>
               <div className="sm:flex items-center mt-5 mx-auto max-w-xl">
                 <input
+                  id="email"
                   type="email"
                   placeholder="Email address"
                   autoComplete="email"
