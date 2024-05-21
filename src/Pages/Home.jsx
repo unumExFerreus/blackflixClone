@@ -2,7 +2,7 @@ import Main from "../components/Main";
 import { Row } from "../components/Row";
 import requests from "../Requests";
 import Navbar from "../components/Navbar";
-// import Footer from "../components/Footer";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -18,9 +18,9 @@ const Home = () => {
         <Row rowID="2" title="Top Rated" fetchURL={requests.requestTopRated} />
         <Row rowID="3" title="Upoming" fetchURL={requests.requestUpoming} />
       </div>
-      {/* <footer className="bg-[#181818] mt-20 mx-[3%] max-w-[55%]">
+      <footer className="bg-[#181818] mt-20 mx-[3%] max-w-[55%]">
         <Footer />
-      </footer> */}
+      </footer>
     </div>
   );
 };
