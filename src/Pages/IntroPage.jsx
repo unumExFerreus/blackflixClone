@@ -198,13 +198,13 @@ function IntroPage() {
           <div className="w-full h-2 absolute bg-[#444] opacity-50" />
         </div>
       </section>
-      <section aria-label="Accordion">
+      {/* <section aria-label="Accordion">
         <div className="bg-black w-full">
           <div className="flex flex-row h-full py-14 lg:py-[4.5rem] lg:justify-center m-auto items-center w-full sm:max-w-[calc(100%-4rem)] xl:max-w-[calc(83.3%-6rem)] xxxl:max-w-[calc(66.6%-6rem)]">
             <Accordion />
           </div>
         </div>
-      </section>
+      </section> */}
       <footer>
         <div className="bg-black w-full">
           <div className="max-w-[calc(100%-3rem)] sm:max-w-[calc(100%-4rem)] xl:max-w-[calc(83.3%-6rem)] xxxl:max-w-[calc(66.6%-6rem)] mx-auto">
