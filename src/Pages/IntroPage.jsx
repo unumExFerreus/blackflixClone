@@ -1,4 +1,4 @@
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 import Accordion from "../components/Accordion";
 import "../App.css";
 import {
@@ -207,9 +207,9 @@ function IntroPage() {
       </section>
       <footer>
         <div className="bg-black w-full">
-          <div className="max-w-[calc(100%-3rem)] sm:max-w-[calc(100%-4rem)] xl:max-w-[calc(83.3%-6rem)] xxxl:max-w-[calc(66.6%-6rem)] mx-auto">
+          {/* <div className="max-w-[calc(100%-3rem)] sm:max-w-[calc(100%-4rem)] xl:max-w-[calc(83.3%-6rem)] xxxl:max-w-[calc(66.6%-6rem)] mx-auto">
             <Footer />
-          </div>
+          </div> */}
         </div>
       </footer>
     </div>

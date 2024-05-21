@@ -81,9 +81,9 @@ const SignUp = () => {
             Learn more.
           </p>
         </form>
-        <Link to={"/movies"} className="text-white ml-auto text-[.875rem]">
+        {/* <Link to={"/movies"} className="text-white ml-auto text-[.875rem]">
           Continue as a guest
-        </Link>
+        </Link> */}
       </div>
       <div className="border-solid border-t-[1px] leading-none border-[#737373] flex md:hidden" />
       <footer className="w-full bg-black bg-opacity-75">
