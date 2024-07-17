@@ -1,8 +1,9 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Introducing a Netflix clone project, meticulously crafted with HTML,
+TailwindCSS, React (v18), Firebase, Axios, and React Context. Through
+this project, I delved deep into React, React DOM, and dynamic
+routing, gaining valuable insights into building responsive and
+interactive web applications. Working with real APIs provided me
+with hands-on experience in fetching data, enhancing my
+understanding of front-end data management. Additionally, the
+integration of Firebase introduced me to concepts of authentication
+in the frontend realm, further expanding my skill set.
